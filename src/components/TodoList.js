@@ -9,12 +9,17 @@ export default function(props) {
       <ul>
         {todos.map(todo => (
           <li
+            id="todoItem"
             className={todo.completed ? "completed" : ""}
             key={"todo" + todo.id}
             onClick={e => toggle(todo.id)}
           >
-            {todo.title}
-            <button onClick={e => remove(todo.id)}>X</button>
+            <p>{todo.title}</p>
+            <p className="removex">
+              <button className="removethe" onClick={e => remove(todo.id)}>
+                X
+              </button>
+            </p>
           </li>
         ))}
       </ul>

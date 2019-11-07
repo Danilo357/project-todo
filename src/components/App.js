@@ -1,9 +1,8 @@
 import React from "react"
 import { Provider } from "react-redux"
 import store from "../redux/store"
-
-import TodoForm from "./TodoForm"
 import TodoList from "./TodoList"
+import TodoForm from "./TodoForm"
 
 function App() {
   return (

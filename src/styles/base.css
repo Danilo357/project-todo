@@ -14,6 +14,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgb(244 244 244);
+  display: flex;
+  justify-content: center;
 }
 
 code {
@@ -23,4 +26,69 @@ code {
 
 .completed {
   text-decoration: line-through;
+}
+
+.input {
+  width: 400px;
+  height: 60px;
+  font-size: 20px;
+  padding-left: 15px;
+  outline-color: red;
+}
+:placeholder-shown {
+  font-size: 20px;
+  text-align: center;
+  color: rgb(244 244 244);
+}
+.wrap {
+  display: flex;
+  justify-content: center;
+  /* margin: auto; */
+  margin-top: 50px;
+}
+
+.todo {
+}
+.todos {
+  text-align: center;
+  font-size: 70px;
+  color: pink;
+}
+.removethe {
+  display: flex;
+  width: 50px;
+  border: none;
+  background: transparent;
+  color: red;
+  font-size: 20px;
+}
+
+/* .container {
+  width: 600px;
+  height: 800px;
+  background: rgb(244 244 244);
+  /* display: flex;
+  justify-content: center; */
+/* margin: auto;
+  margin-top: 50px; */
+/* } */
+ul {
+  padding: 0;
+}
+li {
+  display: flex;
+  justify-content: flex-end;
+  width: 400px;
+  height: 60px;
+  line-height: 60px;
+  background: white;
+  border: 1px solid rgb(244 244 244);
+  padding-left: 15px;
+}
+.removex {
+}
+#todoItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

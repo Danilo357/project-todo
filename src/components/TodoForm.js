@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import { useTodos } from "../redux/ducks/todos"
-
 export default function(props) {
   const { add } = useTodos()
   const [todo, setTodo] = useState("")
@@ -13,15 +12,20 @@ export default function(props) {
   }
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          onChange={e => setTodo(e.target.value)}
-          value={todo}
-        />
-        <button type="submit">Add Todo</button>
-      </form>
+    <div className="container">
+      <div className="todos">Todos</div>
+      <div className="wrap">
+        <form onSubmit={handleSubmit}>
+          <input
+            placeholder="What needs to be done?"
+            className="input"
+            type="text"
+            onChange={e => setTodo(e.target.value)}
+            value={todo}
+          />
+          {/* <button type="submit">Add Todo</button> */}
+        </form>
+      </div>
     </div>
   )
 }
