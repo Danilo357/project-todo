@@ -1,24 +1,3 @@
 {
-  "todos": [
-    {
-      "title": "wew",
-      "completed": true,
-      "id": 1
-    },
-    {
-      "title": "fdef",
-      "completed": false,
-      "id": 2
-    },
-    {
-      "title": "fdef",
-      "completed": false,
-      "id": 3
-    },
-    {
-      "title": "dfd",
-      "completed": false,
-      "id": 4
-    }
-  ]
+  "todos": []
 }

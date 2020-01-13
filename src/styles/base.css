@@ -43,16 +43,15 @@ code {
 .wrap {
   display: flex;
   justify-content: center;
-  /* margin: auto; */
+
   margin-top: 50px;
 }
 
-.todo {
-}
 .todos {
   text-align: center;
-  font-size: 70px;
-  color: pink;
+  font-size: 25px;
+  color: red;
+  margin-top: 30px;
 }
 .removethe {
   display: flex;
@@ -63,15 +62,6 @@ code {
   font-size: 20px;
 }
 
-/* .container {
-  width: 600px;
-  height: 800px;
-  background: rgb(244 244 244);
-  /* display: flex;
-  justify-content: center; */
-/* margin: auto;
-  margin-top: 50px; */
-/* } */
 ul {
   padding: 0;
 }
@@ -85,8 +75,7 @@ li {
   border: 1px solid rgb(244 244 244);
   padding-left: 15px;
 }
-.removex {
-}
+
 #todoItem {
   display: flex;
   justify-content: space-between;

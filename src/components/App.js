@@ -1,8 +1,8 @@
-import React from "react"
-import { Provider } from "react-redux"
-import store from "../redux/store"
-import TodoList from "./TodoList"
-import TodoForm from "./TodoForm"
+import React from "react";
+import { Provider } from "react-redux";
+import store from "../redux/store";
+import TodoList from "./TodoList";
+import TodoForm from "./TodoForm";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <TodoForm />
       <TodoList />
     </Provider>
-  )
+  );
 }
 
-export default App
+export default App;

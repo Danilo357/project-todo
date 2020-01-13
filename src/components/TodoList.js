@@ -1,8 +1,8 @@
-import React from "react"
-import { useTodos } from "../redux/ducks/todos"
+import React from "react";
+import { useTodos } from "../redux/ducks/todos";
 
 export default function(props) {
-  const { todos, remove, toggle } = useTodos()
+  const { todos, remove, toggle } = useTodos();
 
   return (
     <div>
@@ -24,5 +24,5 @@ export default function(props) {
         ))}
       </ul>
     </div>
-  )
+  );
 }

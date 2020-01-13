@@ -1,19 +1,26 @@
-import React, { useState } from "react"
-import { useTodos } from "../redux/ducks/todos"
+import React, { useState } from "react";
+import { useTodos } from "../redux/ducks/todos";
 export default function(props) {
-  const { add } = useTodos()
-  const [todo, setTodo] = useState("")
+  const { add } = useTodos();
+  const [todo, setTodo] = useState("");
 
   function handleSubmit(e) {
-    e.preventDefault()
+    e.preventDefault();
 
-    add(todo)
-    setTodo("")
+    add(todo);
+    setTodo("");
   }
 
   return (
     <div className="container">
-      <div className="todos">Todos</div>
+      <div className="todos">
+        <span>
+          WRITE your list and simply mark as <br />
+          1. COMPLETED ( click on name ) <br />
+          2. DELETE ( click on x )
+        </span>
+      </div>
+
       <div className="wrap">
         <form onSubmit={handleSubmit}>
           <input
@@ -23,9 +30,8 @@ export default function(props) {
             onChange={e => setTodo(e.target.value)}
             value={todo}
           />
-          {/* <button type="submit">Add Todo</button> */}
         </form>
       </div>
     </div>
-  )
+  );
 }
